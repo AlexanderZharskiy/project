@@ -1,118 +1,38 @@
-// 'use strict';
+"use strict";
 
-// var leftBorderWidth = 1;
-// let second = 2;
-// const pi = 3.14;
+if(4 == 9){
+  console.log("Ok")
+}else {
+  console.log("Error")
 
-// // console.log(leftBorderWidth);
+}
 
-// console.log(4/0);
-// console.log('string'*9);
+const num = 50;
 
-// let something;
-// console.log(something);
+if(num < 48){
+  console.log("ННеверно")
+}else if(num > 100){
+  console,log("Снова не верно")
+}else{
+  console.log("True")
+}
 
+(num == 50) ? console.log("True") : console.log("False");
 
-// let person = {
-//     name:"John",
-//     age: 25,
-//     isMarried: false
-// };
+const numb = 50;
 
-// person.male = "Man"
+switch(numb){  // Проверка на строгое соответствие
+  case 49:
+    console.log("false")
+    break;
+    case 100:
+    console.log("Not now")
+    break;
+    case 50:
+      console.log("True")
+      break;
+      default:
+        console.log("default")
+        break;
 
-// if(person.isMarried === false){
-//     console.log("Not MArried")
-// }
-// else{
-//     console.log("Ess his Married")
-// }
-
-// console.log(person.age);
-// console.log(person.name);
-// console.log(person.isMarried);
-// console.log(person.male);
-
-// console.log(person["age"]);
-// console.log(person["name"]);
-// console.log(person['isMarried']);
-
-// let array = ['plum.png','orange.jpg','apple.bmp'];
-
-// console.log(array[1]);
-
-// // alert("Hello world");
-
-// // let answer = confirm("Are you here?");
-
-// // console.log(answer);
-
-// // let answer = prompt("Есть вам 18 лет??" );
-
-// // console.log(typeof(answer));
-
-// // console.log("arr -" + " object");
-
-// let incr = 10,
-//     decr = 10;
-
-//     // incr++;
-//     // decr--;
-
-
-//     console.log(++incr);
-//     console.log(--decr);
-
-//     console.log(5%2);
-
-//     console.log("2" == 2);
-//     console.log("2" === 2);
-
-//     let isChacked = true,
-//     isClose = true;
-
-//     console.log(isChacked && isClose);
-
-//     let issChacked = true,
-//     issClose = false;
-
-//     console.log(issChacked && issClose);
-
-//     let notChacked = false,
-//     notClose = false;
-
-//     console.log(notChacked || !notClose)
-
-
-//     let answear = [];
-//     answear[0] = prompt("Как ваше имя?" ,"");
-//     answear[1] = prompt("Как ваша фамилия?", "");
-//     answear[2] = prompt("Сколько вам лет?", "");
-
-//     document.write(answear);
-
-'use strict';
-
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
-
-const personalMovieDB = {
-
-  count: numberOfFilms,
-  movies:  {},
-  actors: {},
-  genre : [],
-  private: false
-
-};
-
-
-let a = prompt("Один из последних фильмов ??"),
-b = prompt("На сколько центе его?"),
-c = prompt("Один из последних фильмов"),
-d = prompt("На сколько оценитте его?");
-
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
+}
