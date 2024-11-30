@@ -1,38 +1,37 @@
 "use strict";
 
-if(4 == 9){
-  console.log("Ok")
-}else {
-  console.log("Error")
+let star = "*";
+for(let i = 1; i < 10;i++){
+  console.log(star)
+  // document.write(star)
+  star += "*"
+}
+console.log();
 
+let star1 = "*";
+for(let i = 0; i < 1; i++){
+  for(let j = 1; j < 10; j++){
+    console.log(star1);
+    star1 += "*";
+  }
 }
 
-const num = 50;
+for (var i = 1; i <= 50; i++) {
+  document.write(i + '<br>');
+  }
 
-if(num < 48){
-  console.log("ННеверно")
-}else if(num > 100){
-  console,log("Снова не верно")
-}else{
-  console.log("True")
-}
+  let arr = [1,2,3,4,5];
 
-(num == 50) ? console.log("True") : console.log("False");
+  for(let i = 0; i < arr.length; i++){
+    document.write(arr[i]);
+  }
+  
 
-const numb = 50;
+  let arr1 = [1,2,3,4,5];
+  let result = 1;
 
-switch(numb){  // Проверка на строгое соответствие
-  case 49:
-    console.log("false")
-    break;
-    case 100:
-    console.log("Not now")
-    break;
-    case 50:
-      console.log("True")
-      break;
-      default:
-        console.log("default")
-        break;
+  for(let i = 0; i < arr.length; i++){
+    result = result * arr[i];
+  }
 
-}
+  alert(result)
