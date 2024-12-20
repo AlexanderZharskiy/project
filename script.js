@@ -37,81 +37,98 @@
 //   alert(result)
 
 
-let personalMovieDB = {
-    count: 0,
-    movies: {},
-    acrors:{},
-    genre: [],
-    private: false,
-    start: function(){
-      personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?').trim();
-      while(personalMovieDB.count == '' || personalMovieDB.count == null || 
-        isNaN(personalMovieDB.count)){
-        personalMovieDB.count = +prompt('СкольКо фильмов вы уже посмотрели?');
-      }
-    },
-    rememberMyFilms: function (){
-      for(let i = 0; i < 2; i++){
-      const a = prompt('Один из последних просмотренный фильмов'),
-    b = prompt('На сколько оцените его?');
+// let personalMovieDB = {
+//     count: 0,
+//     movies: {},
+//     acrors:{},
+//     genre: [],
+//     private: false,
+//     start: function(){
+//       personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?').trim();
+//       while(personalMovieDB.count == '' || personalMovieDB.count == null || 
+//         isNaN(personalMovieDB.count)){
+//         personalMovieDB.count = +prompt('СкольКо фильмов вы уже посмотрели?');
+//       }
+//     },
+//     rememberMyFilms: function (){
+//       for(let i = 0; i < 2; i++){
+//       const a = prompt('Один из последних просмотренный фильмов'),
+//     b = prompt('На сколько оцените его?');
     
-    if( a != null && b != null && a !='' && b !='' && a.length <= 50){
-    personalMovieDB.movies[a] = b;
-    console.log('done');
-    }
-    else{
-      console.log('error')
-      i--;
-    }
-    }
-    },
+//     if( a != null && b != null && a !='' && b !='' && a.length <= 50){
+//     personalMovieDB.movies[a] = b;
+//     console.log('done');
+//     }
+//     else{
+//       console.log('error')
+//       i--;
+//     }
+//     }
+//     },
 
-     detectPersonalLevel: function(){
-      if(personalMovieDB.count < 10){
-        document.write('Просмотрено довольно мало')
-      }else if(personalMovieDB.count >= 10 && personalMovieDB.count <=30){
-        document.write("Вы классический зритель")
-      }else if(personalMovieDB.count > 30){
-        document.write('Вы киноман')
-      }
-    },
+//      detectPersonalLevel: function(){
+//       if(personalMovieDB.count < 10){
+//         document.write('Просмотрено довольно мало')
+//       }else if(personalMovieDB.count >= 10 && personalMovieDB.count <=30){
+//         document.write("Вы классический зритель")
+//       }else if(personalMovieDB.count > 30){
+//         document.write('Вы киноман')
+//       }
+//     },
 
-    showMyBD: function (){
-      if(!personalMovieDB.private){
-        console.log(personalMovieDB);
-      }
-    },
+//     showMyBD: function (){
+//       if(!personalMovieDB.private){
+//         console.log(personalMovieDB);
+//       }
+//     },
 
-     toggleVisibleMyDB: function(){
-     if(personalMovieDB.private){
-      personalMovieDB.private = false;
-     }
-     else{
-      personalMovieDB.private = true;
-     }
+//      toggleVisibleMyDB: function(){
+//      if(personalMovieDB.private){
+//       personalMovieDB.private = false;
+//      }
+//      else{
+//       personalMovieDB.private = true;
+//      }
   
-    },
+//     },
 
-    writeYourGenres: function (){
-      for(let i = 1; i <= 3; i++){
-        const a = prompt(`Ваш любимый жанр под номером ${i}`).trim();
-        if(a != null && a != ''){
-    personalMovieDB.genre[i - 1] = a;
-        }
-        else{
-          console.log('error')
-          i--;
-        }
-      }
+//     writeYourGenres: function (){
+//       for(let i = 1; i <= 3; i++){
+//         const a = prompt(`Ваш любимый жанр под номером ${i}`).trim();
+//         if(a != null && a != ''){
+//     personalMovieDB.genre[i - 1] = a;
+//         }
+//         else{
+//           console.log('error')
+//           i--;
+//         }
+//       }
     
-      personalMovieDB.genre.forEach(function(item, i){
-        console.log(`Любимый жанр ${i + 1} это  ${item}`)
+//       personalMovieDB.genre.forEach(function(item, i){
+//         console.log(`Любимый жанр ${i + 1} это  ${item}`)
     
-      });
+//       });
     
-    }
+//     }
 
-};
+// };
+
+let x = 5;
+alert(++x);
+
+let arr = [];
+arr + false;
+arr - null;
+arr = true;
+
+
+let y = 1;
+let x1 = y = 2;
+
+alert(x1);
+
+alert("1"[0]);
+
 
 
 
