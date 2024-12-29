@@ -113,45 +113,21 @@
 
 // };
 
-let x = 5;
-alert(++x);
+// let x = 5;
+// alert(++x);
 
-let arr = [];
-arr + false;
-arr - null;
-arr = true;
-
-
-let y = 1;
-let x1 = y = 2;
-
-alert(x1);
-
-alert("1"[0]);
+// let arr = [];
+// arr + false;
+// arr - null;
+// arr = true;
 
 
+// let y = 1;
+// let x1 = y = 2;
 
+// alert(x1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// alert("1"[0]);
 
 // let person = {
 //   name: 'Artur',
@@ -215,3 +191,144 @@ alert("1"[0]);
 
 // console.log(numbers);
 // console.log(newNumber);
+
+
+
+//  +prompt((x , n) => {
+//     let resut = 1;
+
+//     for(let i = 1; i = n; i++){
+
+//     }
+// })
+
+
+// function pow(x , n)  {
+//     let resut = 1;
+
+//     for(let i = 1; i <= n; i++){
+//         resut *= x;
+//     }
+
+//     console.log(resut);
+// }
+
+// function pow(x , n){
+//     if (n === 1){
+//         return x;
+//     }else{
+//         return x * pow(x , n - 1);
+//     }
+// }
+
+
+// pow(5,5);
+// pow(6,6);
+// pow(7,6);
+// pow(8,6);
+// pow(9,6);
+
+
+
+// btn.addEventListener('click',()=>{
+//     alert('Hello Man')
+// })
+
+// btn.addEventListener('mouseenter',()=>{
+//     alert('Mouse at home Man')
+// })
+
+// btn.addEventListener('mouseenter',(e)=>{
+// e.target.removeEventListener();
+// })
+// const deleteElement = (e) =>{
+// console.log(e.target);
+// }
+
+// const btn = document.querySelectorAll('.button1');
+
+// const deleteElement = (event) =>{
+//     event.target.remove('click');
+//     console.log("Deleted elemetnt", event.target)
+//     }
+    
+
+
+// btn.forEach(item => {
+//     item.addEventListener('click', deleteElement);
+// });
+// // btn.removeEventListener('click', deleteElement);
+
+
+// const link = document.querySelector('a');
+
+
+// link.addEventListener('click', (event) =>{
+//     event.preventDefault();
+//     console.log(event.target);
+// })
+
+
+// const salaries = {
+//     john: 500,
+//     ivan: 1000,
+//     anna: 10000
+// };
+
+
+// salaries[Symbol.iterator] = function  (){
+//     return{
+//         currentSalary: this.john, // Начальная зарплата
+//          maxSalary: this.anna,
+
+//         next(){
+//             if (this.currentSalary < this.maxSalary){
+//                 this.currentSalary += 500;
+//                 return{done: false, value:this.currentSalary}
+//             }
+//             else{
+//                 return{done: true}
+//             }
+//         }
+//     };
+// };
+
+// for(let res of salaries){
+//     console.log(res);
+// }
+
+// const salaries = {
+//     john: 500,
+//     ivan: 1000,
+//     anna: 10000
+// };
+
+// salaries[Symbol.iterator] = function () {
+//     let currentSalary = this.john; // Начальная зарплата
+//     const maxSalary = this.anna;  // Максимальная зарплата
+
+//     return {
+//         next() {
+//             if (currentSalary < maxSalary) {
+//                 currentSalary += 500; // Увеличиваем зарплату на 500
+//                 return { done: false, value: currentSalary };
+//             } else {
+//                 return { done: true }; // Итерация завершена
+//             }
+//         }
+//     };
+// };
+
+// for (let res of salaries) {
+//     console.log(res); // 1000, 1500, 2000, ..., 10000
+// }
+
+
+const btn = document.querySelectorAll('button');
+
+btn[0].addEventListener('click', (event)=>{
+    console.dir(event.target);
+
+});
+
+
