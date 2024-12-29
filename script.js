@@ -1,5 +1,7 @@
 "use strict";
 
+console.log('Script connected!');
+
 // let star = "*";
 // for(let i = 1; i < 10;i++){
 //   console.log(star)
@@ -324,11 +326,20 @@
 // }
 
 
-const btn = document.querySelectorAll('button');
+// const btn = document.querySelectorAll('button');
 
-btn[0].addEventListener('click', (event)=>{
-    console.dir(event.target);
+// btn.addEventListener('click', (event) =>{
+//     console.log(event.target);
+// })
 
+const buttons = document.querySelectorAll('button');
+
+console.log('Script connected!');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        console.log(event.target); // Показывает кнопку, по которой был клик
+    });
 });
 
 
