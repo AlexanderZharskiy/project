@@ -18,7 +18,7 @@ console.log('Script connected!');
 //   }
 // }
 
-// for (var i = 1; i <= 50; i++) {
+// for (var i = 1; i <= 50; i++) {www
 //   document.write(i + '<br>');
 //   }
 
@@ -26,7 +26,8 @@ console.log('Script connected!');
 
 //   for(let i = 0; i < arr.length; i++){
 //     document.write(arr[i]);
-//   }
+//   }python -m http.server
+
   
 
 //   let arr1 = [1,2,3,4,5];
